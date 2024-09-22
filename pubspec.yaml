@@ -1,0 +1,100 @@
+name: mealmagic
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.3.0
+  firebase_auth: ^5.2.0
+  cloud_functions: ^5.1.0
+  cloud_firestore: ^5.2.1
+  firebase_storage: ^12.1.3
+  firebase_messaging: ^15.0.4
+  provider: ^6.1.2
+  carousel_slider: ^5.0.0
+  intl_phone_field: ^3.2.0
+  font_awesome_flutter: ^10.7.0
+  email_validator: ^3.0.0
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^7.1.0
+  flutter_facebook_auth_platform_interface: ^6.1.0
+  flutter_local_notifications: ^17.2.2
+  url_launcher: ^6.0.0
+  google_maps_flutter: ^2.2.3
+  firebase_dynamic_links: ^6.0.5
+  geolocator: ^9.0.0
+  permission_handler: ^10.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/yassa_poulet.jpg
+    - assets/images/image_home_1.jpg
+    - assets/images/image_home_2.jpg
+    - assets/images/image_home_3.jpg
+    - assets/images/logo_MealMagic.png
+    - assets/images/RSN.png
+    - assets/images/Reunion.png
+    - assets/images/LDK.png
+    - assets/images/yaourt.png
+    - assets/images/IMG-20240829-WA0009.jpg
+    - assets/images/jus_fruit-removebg-preview.png
+    - assets/images/IMG-20240829-WA0004.jpg
+    - assets/images/yaourt-of-fruit.jpg
+    - assets/images/Le mafé be.jpg
+    - assets/images/IMG-20240829-WA0017.jpg
+    - assets/images/telecharge_2.jpeg
+    - assets/images/Capture d’écran 2024-07-28 020727.png
+    - assets/images/app_play.png
+    - assets/images/google_play.png
+    - assets/images/LIVREUR.jpeg
+    - assets/images/cuisiniere.jpeg
+    - assets/images/couple.png
+    - assets/images/icon reçu.png
+    - assets/images/icon plat.png
+    - assets/images/icon com.jpg
+    - assets/images/raby.jpg
+    - assets/images/thièb_home.jpeg
+    - assets/images/dégué.jpg
+    - assets/images/sprite.jpg
+    - assets/images/coca.png
+    - assets/images/fanta.jpeg
+    - assets/images/cocktails-removebg-preview.png
+    - assets/images/jus-de-gingembre-removebg-preview.png
+    - assets/images/tamarinpng-removebg-preview.png
+    - assets/images/bissap-removebg-preview.png
+    - assets/images/Tot-à-la-sauce-gombo.jpg
+    - assets/images/soupe.jpg
+    - assets/images/soupe kandia.jpg
+    - assets/images/mafé.jpeg
+    - assets/images/IMG-20240829-WA0016.jpg
+    - assets/images/lipton.jpeg
+    - assets/images/café.jpeg
+    - assets/images/pain.png
+    - assets/images/soupe_poisson.jpeg
+    - assets/images/riz_aubergine.jpeg
+    - assets/images/aubergine.png
+    - assets/images/oseille.jpeg
+    - assets/images/soupe_poulet.jpeg
+
+  fonts:
+    - family: TrajanPro
+      fonts:
+        - asset: assets/fonts/TrajanPro.ttf
+    - family: TrajanProBold
+      fonts:
+        - asset: assets/fonts/TrajanPro_Bold.ttf
+          weight: 700

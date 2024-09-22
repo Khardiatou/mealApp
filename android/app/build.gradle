@@ -1,0 +1,99 @@
+// plugins {
+//     id "com.android.application"
+//     id "kotlin-android"
+//     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+//     id "dev.flutter.flutter-gradle-plugin"
+// }
+
+// android {
+//     namespace = "com.example.mealmagic"
+//     compileSdk = flutter.compileSdkVersion
+//     ndkVersion = flutter.ndkVersion
+
+//     compileOptions {
+//         sourceCompatibility = JavaVersion.VERSION_1_8
+//         targetCompatibility = JavaVersion.VERSION_1_8
+//     }
+
+//     kotlinOptions {
+//         jvmTarget = JavaVersion.VERSION_1_8
+//     }
+
+//     defaultConfig {
+//         applicationId = "com.example.mealmagic"
+//         minSdk = 23
+//         targetSdk = flutter.targetSdkVersion
+//         versionCode = flutter.versionCode
+//         versionName = flutter.versionName
+//     }
+
+//     buildTypes {
+//         release {
+//             signingConfig = signingConfigs.debug
+//         }
+//     }
+// }
+
+// flutter {
+//     source = "../.."
+// }
+
+// // Ajoutez cette ligne à la fin du fichier
+// apply plugin: 'com.google.gms.google-services'
+buildscript {
+    ext.kotlin_version = '1.9.0'  // or the latest Kotlin version
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2' // Android Gradle plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Kotlin plugin with correct version
+        
+        classpath 'com.google.gms:google-services:4.3.15' // Latest Google services plugin
+    }
+}
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.mealmagic"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.mealmagic"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// Ensure the Google services plugin is applied after the android block
+apply plugin: 'com.google.gms.google-services'
